@@ -11,7 +11,7 @@ $max=1137 ;
             $i=$i+1;
         }
     
-    else echo $i . '<br />' ;
+    echo $i . '<br />' ;
     $i=$i+1;
 
     }

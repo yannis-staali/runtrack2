@@ -19,18 +19,13 @@
 
 <?php
 
-	echo "<table>
-				<thead>
-					<th>Argument</th>
-					<th>Valeur</th>				
-				</thead>
-				
-				<tbody>";
-				
-	foreach($_GET as $args => $value)
+	//var_dump($_GET);
+	$count = 0;
+	foreach($_GET as $name => $value)
 	{
-		echo "<tr><td>".$args."</td><td>".$value."</td></tr>";
+		echo $name." -> ".$value."<br/>";
+		$count++;
 	}
 	
-	echo "</tbody>";
+	echo "Il y a ".$count." arguments";
 ?>
